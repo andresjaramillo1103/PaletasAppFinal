@@ -12,7 +12,7 @@ import {
     View,
 } from 'react-native';
 
-const API_URL = 'http://192.168.20.96:3000';
+const API_URL = 'https://nevados-api.onrender.com';
 
 export default function ResumenPedidoScreen({ route, navigation }: any) {
   const { pedido } = route.params;
@@ -71,7 +71,6 @@ export default function ResumenPedidoScreen({ route, navigation }: any) {
       if (!respuesta.ok || !resultado.success) {
         throw new Error(resultado.message || 'No se pudo guardar el pedido.');
       }
-
       Alert.alert(
         '¡Pedido registrado!',
         'Tu pedido quedó guardado correctamente. Ahora puedes enviarlo por WhatsApp.',

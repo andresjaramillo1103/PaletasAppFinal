@@ -12,7 +12,7 @@ import {
     View
 } from 'react-native';
 
-const API_URL = 'http://10.196.113.202:3000';
+const API_URL = 'https://nevados-api.onrender.com';
 
 const imagenes: { [key: number]: any } = {
   8: require('../assets/cocomaracuya.jpeg'),
